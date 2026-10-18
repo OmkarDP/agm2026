@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Tiro Devanagari Marathi", "Noto Sans Devanagari", system-ui, serif;
+  --font-display: "Gotu", "Tiro Devanagari Marathi", "Noto Sans Devanagari", sans-serif;
+  --color-ink: #1c1917;
+  --color-muted: #57534e;
+  --color-paper: #f6f1e8;
+  --color-card: #fffdf8;
+  --color-line: #e7e0d4;
+  --color-forest: #1f4d3a;
+  --color-forest-dark: #16382a;
+  --color-leaf: #2e6b50;
+  --color-terracotta: #b4532a;
+  --color-danger: #b42318;
+  --color-danger-bg: #fef3f2;
+  --color-success: #0f6b4c;
+  --color-success-bg: #ecfdf3;
+}
+
+html {
+  font-family: var(--font-sans);
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+.honeypot {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
